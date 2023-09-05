@@ -1,23 +1,25 @@
-import logo from './logo.svg';
 import './App.css';
+import logo from './img/reward.png';
+import Tarea from './comp/Tarea'; 
+import './stylesheet/Tarea.css';
+import './stylesheet/TareaForm.css';
+import TareaForm from './comp/TareaForm'; 
+import Lista from './comp/Lista';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='tarea'>
+     <div className='logo-cont'>
+      <img src={logo}
+       className='logo' alt='logo'
+      />
+     </div>
+     <div className='lista-princ'>
+      <h1>Tareas</h1>
+      {/*<TareaForm />
+      <Tarea texto='aprender react'/> */}
+      <Lista />
+     </div>
     </div>
   );
 }
